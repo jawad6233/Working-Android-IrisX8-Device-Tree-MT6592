@@ -1,0 +1,1 @@
+# Android-IrisX8-Device-Tree-MT6592
