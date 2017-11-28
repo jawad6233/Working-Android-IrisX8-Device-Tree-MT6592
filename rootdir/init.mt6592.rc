@@ -360,6 +360,11 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
     user system
     group system
     class core
+	
+service charger /sbin/healthd -c
+    class charger
+    critical
+    seclabel u:r:healthd:s0
 
 on fs
     write /proc/bootprof "INIT:eMMC:Mount_START"
@@ -589,7 +594,6 @@ service ipod /system/bin/ipod
     user root
     group root
     class ipo
-    disabled
 
 # CM Performance Profiles
 
