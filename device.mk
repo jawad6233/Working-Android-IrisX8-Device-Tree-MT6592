@@ -117,6 +117,8 @@ PRODUCT_PACKAGES += \
 # FM Radio app
 PRODUCT_PACKAGES += \
     FMRadio \
+    FMRadioGoogle \
+    FmRadioTrampoline2 \
     libfmjni
     
 # Substratum
