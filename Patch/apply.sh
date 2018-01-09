@@ -20,10 +20,5 @@
  cd packages/apps/FMRadio
  patch -p1 < ../../../device/LAVA/IRISX8/Patch/android_packages_apps_FMRadio.patch
  
- cd ../../..
- cd packages/services/Telephony
- patch -p1 -p1 < ../../../device/LAVA/IRISX8/Patch/android_packages_services_Telephony.patch
- cd ../../..
- 
- 
+
  echo Successfuly patched!
