@@ -1,11 +1,6 @@
 #!/bin/bash
 
  cd ../../../..
-
- cd system/vold
- patch -p1 < ../../device/LAVA/IRISX8/Patch/android_system_vold.patch
- 
- cd ../..
  cd frameworks/av
  patch -p1 < ../../device/LAVA/IRISX8/Patch/android_frameworks_av.patch
  
@@ -17,5 +12,4 @@
  cd packages/apps/FMRadio
  patch -p1 < ../../../device/LAVA/IRISX8/Patch/android_packages_apps_FMRadio.patch
  
-
  echo Successfuly patched!
