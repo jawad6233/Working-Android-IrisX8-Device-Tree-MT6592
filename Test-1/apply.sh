@@ -40,7 +40,7 @@
  cd wpa_supplicant_8
  patch -p1 < ../../device/LAVA/IRISX8/Test-1/android_external_wpa_supplicant_8.patch
  
- cd ../../..
+ cd ../..
  cd vendor/codeaurora/telephony
  patch -p1 -p1 < ../../../device/LAVA/IRISX8/Test-1/android_vendor_codeaurora_telephony.patch
  
@@ -49,4 +49,4 @@
  patch -p1 -p1 < ../../../device/LAVA/IRISX8/Test-1/android_packages_services_Telephony.patch
  cd ../../..
  
- echo Successfuly patched!
+ echo Chaliye Suru Karte Hai...
