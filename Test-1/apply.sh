@@ -1,7 +1,7 @@
 #!/bin/bash
 
  cd ../../../..
- cd android_system/core
+ cd system/core
  patch -p1 < ../../device/LAVA/IRISX8/patches/android_android_system_core_MTK.patch
  
  cd ..
@@ -17,7 +17,7 @@
  patch -p1 < ../../device/LAVA/IRISX8/patches/android_system_sepolicy_MTK.patch
  
  cd ../..
- cd android_frameworks/av
+ cd frameworks/av
  patch -p1 < ../../device/LAVA/IRISX8/patches/android_frameworks_av.patch
  
  cd ..
@@ -31,12 +31,12 @@
  cd ..
  cd opt/telephony
  patch -p1 < ../../../device/LAVA/IRISX8/patches/android_frameworks_opt_telephony.patch
- cd ../../..
  
+ cd ../../..
  cd external/icu
  patch -p1 < ../../device/LAVA/IRISX8/patches/android_external_icu.patch
- cd ..
  
+ cd ..
  cd wpa_supplicant_8
  patch -p1 < ../../device/LAVA/IRISX8/patches/android_external_wpa_supplicant_8.patch
  
@@ -48,6 +48,5 @@
  cd packages/services/Telephony
  patch -p1 -p1 < ../../../device/LAVA/IRISX8/patches/android_packages_services_Telephony.patch
  cd ../../..
- 
  
  echo Successfuly patched!
