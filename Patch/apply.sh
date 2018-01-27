@@ -3,6 +3,7 @@
  
  cd packages/apps/Settings
  patch -p1 -b < ../../../device/LAVA/IRISX8/Patch/android_settings_developer_info.patch
+ git clean -f -d
  
  cd ../../../vold
  patch -p1 < ../../device/LAVA/IRISX8/Patch/android_system_vold.patch
