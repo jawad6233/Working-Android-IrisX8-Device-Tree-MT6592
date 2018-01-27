@@ -5,7 +5,7 @@
  patch -p1 -b < ../../../device/LAVA/IRISX8/Patch/android_settings_developer_info.patch
  git clean -f -d
  
- cd ../../../vold
+ cd ../../../system/vold
  patch -p1 < ../../device/LAVA/IRISX8/Patch/android_system_vold.patch
  
  cd ../../external/icu
